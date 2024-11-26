@@ -9,6 +9,7 @@ const BlogsPage = () => {
     // });
     // const blogs = await res.json()
     const { data: blogs, isLoading, isError, error } = useGetBlogsQuery("");
+    console.log(blogs)
     return (
         <div className='w-[90%] mx-auto'>
             <h1 className='text-4xl text-center my-6'>All Blogs from <span className='text-accent'>Blogiz</span></h1>
